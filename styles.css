@@ -208,6 +208,10 @@ section {
 }
 
 .circle-container {
+    margin-top: 20px; /* Add margin to separate from previous content */
+}
+
+.circle-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -326,3 +330,4 @@ section {
     font-style: italic;
     text-decoration: underline;
 }
+
