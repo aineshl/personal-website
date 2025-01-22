@@ -312,3 +312,129 @@ section {
     font-style: italic;
     text-decoration: underline;
 }
+
+@media screen and (max-width: 1024px) {
+    .image-container {
+        top: 180px;
+        height: 80px;
+    }
+
+    .name-container {
+        top: 350px;
+        font-size: 35px;
+    }
+
+    .link-container {
+        top: 420px;
+    }
+
+    .link-container a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .mepos {
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .textpos {
+        left: 40%;
+        font-size: 16px;
+    }
+
+    .circle-container {
+        grid-template-columns: repeat(2, 1fr);
+        top: 40%;
+        left: 15%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-container {
+        top: 160px;
+        height: 70px;
+    }
+
+    .name-container {
+        top: 320px;
+        font-size: 30px;
+    }
+
+    .link-container {
+        top: 400px;
+    }
+
+    .link-container a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .mepos {
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        top: 45%;
+    }
+
+    .textpos {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .circle-container {
+        grid-template-columns: repeat(1, 1fr);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .experience, .skills {
+        position: static;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-container {
+        top: 140px;
+        height: 60px;
+    }
+
+    .name-container {
+        top: 280px;
+        font-size: 25px;
+    }
+
+    .link-container {
+        top: 360px;
+    }
+
+    .link-container a {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .mepos {
+        width: 80%;
+    }
+
+    .circle-container {
+        grid-template-columns: repeat(1, 1fr);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .experience, .skills {
+        font-size: 25px;
+    }
+
+    #scrollToTopBtn {
+        bottom: 15px;
+        right: 15px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
