@@ -162,6 +162,11 @@ section {
     top: 50px; 
 }
 
+.about-header {
+    top: 200px; 
+    left: 20.5%;
+}
+
 #me {
     width: 300px;
     height: 300px;
@@ -173,20 +178,21 @@ section {
 
 .mepos {
     position: absolute;
-    top: 54%;
+    top: 55%;
     transform: translateY(-50%);
-    left: 20%;
+    left: 10%;
     height: 100px;
     display: flex;
 }
 
 .textpos {
     position: absolute;
-    top: 34%;
-    left: 45%;
-    font-size: 18px;
+    top: 20%;
+    left: 35%;
+    font-size: 15px;
     color: #9E9383;
     font-family: inherit;
+    max-width: 700px;
 }
 
 .experience {
