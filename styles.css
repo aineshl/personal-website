@@ -177,10 +177,18 @@ section {
 }
 
 .mepos {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    left: 10%;
+    height: 100px;
     display: flex;
 }
 
 .textpos {
+    position: absolute;
+    top: 20%;
+    left: 35%;
     font-size: 15px;
     color: #9E9383;
     font-family: inherit;
@@ -197,6 +205,9 @@ section {
 }
 
 .skills {
+    position: absolute;
+    top: 20%;
+    left: 23%;
     font-size: 45px;
     color: #9E9383;
     font-family: 'Courier New', Courier, monospace;
@@ -212,6 +223,9 @@ section {
     gap: 20px;
     justify-items: center;
     margin: 20px;
+    position: absolute;
+    top: 32%;
+    left: 12.5%;
 }
 
 .white-circle {
@@ -322,154 +336,154 @@ section {
     font-style: italic;
     text-decoration: underline;
 }
-@media (max-width: 768px) {
-    /* General body styles */
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Inter', sans-serif;
-        box-sizing: border-box;
-        background: radial-gradient(circle, #e4dfd6, white);
-        height: 100%; /* Ensure body takes full height */
-        overflow-x: hidden; /* Prevent horizontal overflow */
-    }
+    @media (max-width: 768px) {
+        /* General body styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            box-sizing: border-box;
+            background: radial-gradient(circle, #e4dfd6, white);
+            height: 100%; /* Ensure body takes full height */
+            overflow-x: hidden; /* Prevent horizontal overflow */
+        }
 
-    /* Apply smooth scrolling behavior */
-    html {
-        scroll-behavior: smooth;
-    }
+        /* Apply smooth scrolling behavior */
+        html {
+            scroll-behavior: smooth;
+        }
 
-    /* Apply a full-height section, stacking vertically */
-    section {
-        display: flex;
-        flex-direction: column; /* Stack content vertically */
-        justify-content: flex-start; /* Align items to the top */
-        align-items: center;
-        min-height: 100vh; /* Full viewport height */
-        scroll-snap-align: start;
-        padding: 20px; /* Add some padding */
-        box-sizing: border-box;
-        overflow-y: auto; /* Allow vertical scrolling inside each section */
-        width: 100%; /* Ensure section takes full width */
-    }
+        /* Apply a full-height section, stacking vertically */
+        section {
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
+            justify-content: flex-start; /* Align items to the top */
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+            scroll-snap-align: start;
+            padding: 20px; /* Add some padding */
+            box-sizing: border-box;
+            overflow-y: auto; /* Allow vertical scrolling inside each section */
+            width: 100%; /* Ensure section takes full width */
+        }
 
-    /* About Me Section Header */
-    .about-header {
-        display: none;
-    }
+        /* About Me Section Header */
+        .about-header {
+            display: none;
+        }
 
-    /* About Me Image and Text */
-    .mepos {
-        display: flex;
-        flex-direction: column; /* Stack the image and text vertically */
-        align-items: center; /* Center the content horizontally */
-        width: 100%; /* Take up full width */
-        margin-top: 40px; /* Space between the header and image */
-        text-align: center; /* Center content */
-    }
+        /* About Me Image and Text */
+        .mepos {
+            display: flex;
+            flex-direction: column; /* Stack the image and text vertically */
+            align-items: center; /* Center the content horizontally */
+            width: 100%; /* Take up full width */
+            margin-top: 40px; /* Space between the header and image */
+            text-align: center; /* Center content */
+        }
 
-    #me {
-        width: 200px;
-        height: 200px;
-        border: 5px solid #9E9383;
-        object-fit: cover;
-        margin-bottom: 20px; /* Add space between image and text */
-    }
+        #me {
+            width: 200px;
+            height: 200px;
+            border: 5px solid #9E9383;
+            object-fit: cover;
+            margin-bottom: 20px; /* Add space between image and text */
+        }
 
-    .name-container {
-        font-size: 28px; /* Reduce font size for smaller screens */
-        margin-bottom: 10px; /* Add space between name and navigation buttons */
-    }
+        .name-container {
+            font-size: 28px; /* Reduce font size for smaller screens */
+            margin-bottom: 10px; /* Add space between name and navigation buttons */
+        }
 
-    .link-container {
-        margin-top: 10px; /* Ensure buttons are not too close to the name */
-    }
+        .link-container {
+            margin-top: 10px; /* Ensure buttons are not too close to the name */
+        }
 
-    /* About Text */
-    .textpos {
-        font-size: 14px;
-        color: #9E9383;
-        text-align: center;
-        margin-top: 0; /* No additional space at the top */
-        padding: 0 20px; /* Ensure text isn't too close to the edges */
-    }
+        /* About Text */
+        .textpos {
+            font-size: 14px;
+            color: #9E9383;
+            text-align: center;
+            margin-top: 0; /* No additional space at the top */
+            padding: 0 20px; /* Ensure text isn't too close to the edges */
+        }
 
-    /* Circle-container layout for smaller screens */
-    .circle-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
-        gap: 20px;
-        justify-items: center;
-        margin-top: 40px;
-    }
+        /* Circle-container layout for smaller screens */
+        .circle-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+            gap: 20px;
+            justify-items: center;
+            margin-top: 40px;
+        }
 
-    /* Portfolio layout for smaller screens */
-    .portfolio-container {
-        display: flex;
-        flex-direction: column; /* Stack portfolio items vertically */
-        margin-top: 50px;
-        align-items: center; /* Center the portfolio items */
-    }
+        /* Portfolio layout for smaller screens */
+        .portfolio-container {
+            display: flex;
+            flex-direction: column; /* Stack portfolio items vertically */
+            margin-top: 50px;
+            align-items: center; /* Center the portfolio items */
+        }
 
-    .thumbnail-container {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+        .thumbnail-container {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-    .project {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%; /* Make the project image a circle */
-        overflow: hidden;
-        margin-bottom: 10px;
-        background-color: white;
-        flex-shrink: 0;
-        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
-    }
+        .project {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Make the project image a circle */
+            overflow: hidden;
+            margin-bottom: 10px;
+            background-color: white;
+            flex-shrink: 0;
+            box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+        }
 
-    .description {
-        font-size: 14px;
-        color: #9E9383;
-        text-align: center;
-        margin: 10px;
-    }
-    #portfolio .portfolio-container {
-        margin-top: 100px; /* Add margin to the top to push the projects down */
-    }
+        .description {
+            font-size: 14px;
+            color: #9E9383;
+            text-align: center;
+            margin: 10px;
+        }
+        #portfolio .portfolio-container {
+            margin-top: 100px; /* Add margin to the top to push the projects down */
+        }
 
-    .learn-more-link {
-        font-weight: bold;
-        color: #9E9383;
-        font-style: italic;
-        text-decoration: underline;
-    }
+        .learn-more-link {
+            font-weight: bold;
+            color: #9E9383;
+            font-style: italic;
+            text-decoration: underline;
+        }
 
-    .experience, .skills {
-        position: static; /* Remove absolute positioning */
-        margin-top: 20px; /* Optional: add space between the sections */
-    }
+        .experience, .skills {
+            position: static; /* Remove absolute positioning */
+            margin-top: 20px; /* Optional: add space between the sections */
+        }
 
-    .experience {
-        order: 2; /* Makes the experience section come after skills */
-    }
+        .experience {
+            order: 2; /* Makes the experience section come after skills */
+        }
 
-    .experience {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        height: 100vh; /* Full height of the viewport */
-    }
+        .experience {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh; /* Full height of the viewport */
+        }
 
-    .experience .headers {
-        margin-top: 0; /* Adjust if needed */
-        font-size: 32px; /* Optional: Adjust the size of the header */
-    }
+        .experience .headers {
+            margin-top: 0; /* Adjust if needed */
+            font-size: 32px; /* Optional: Adjust the size of the header */
+        }
 
-    .skills {
-        margin-top: 30px; /* Moves the Skills header down */
-    }
+        .skills {
+            margin-top: 30px; /* Moves the Skills header down */
+        }
 
-}
+    }
