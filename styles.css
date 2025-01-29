@@ -378,8 +378,10 @@ section {
             flex-direction: column; /* Stack the image and text vertically */
             align-items: center; /* Center the content horizontally */
             width: 100%; /* Take up full width */
-            margin-top: 40px; /* Space between the header and image */
+            margin-top: 130px; /* Space between the header and image */
+            margin-bottom: 10px;
             text-align: center; /* Center content */
+            position: static;
         }
 
         #me {
@@ -404,6 +406,7 @@ section {
             font-size: 14px;
             color: #9E9383;
             text-align: center;
+            position: static;
             margin-top: 0; /* No additional space at the top */
             padding: 0 20px; /* Ensure text isn't too close to the edges */
         }
@@ -458,32 +461,13 @@ section {
             font-style: italic;
             text-decoration: underline;
         }
-
-        .experience, .skills {
-            position: static; /* Remove absolute positioning */
-            margin-top: 20px; /* Optional: add space between the sections */
-        }
-
+    
         .experience {
-            order: 2; /* Makes the experience section come after skills */
+            order: 2; /* Moves the experience section below skills */
         }
-
-        .experience {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            height: 100vh; /* Full height of the viewport */
-        }
-
-        .experience .headers {
-            margin-top: 0; /* Adjust if needed */
-            font-size: 32px; /* Optional: Adjust the size of the header */
-        }
-
+    
         .skills {
-            margin-top: 30px; /* Moves the Skills header down */
+            order: 1; /* Keeps the skills section above experience */
         }
 
     }
